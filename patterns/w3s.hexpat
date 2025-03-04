@@ -49,7 +49,6 @@ enum Channel : u32 {
     Fire = 14, // Огонь
 };
 
-
 struct Sound {
     char variable[];
     char sound[];
@@ -84,5 +83,4 @@ struct Sound {
     if (format > 1) Skin skin;
 };
 
-
-Sound sounds[count] @ 0x08 ;
+Sound sounds[count] @ 0x08;
