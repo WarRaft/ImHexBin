@@ -1,4 +1,4 @@
-#pragma description Doodads/Units on map
+#pragma description Warcraft.doo
 #pragma endian little
 #pragma array_limit 99999
 
@@ -11,7 +11,7 @@ char magick[4] @ 0x00 [[comment("W3do")]];
 u32 format @0x04; // ROC=7, TFT=8
 u32 subformat @0x08; // ROC=9/7, TFT=11
 
-bool isUnit = false; 
+bool isUnit = false;
 u32 patch = 26; // Номер патча, указано в war3map.w3i
 
 struct Vector {
@@ -48,7 +48,7 @@ struct Item {
     Vector scale; // если юнит можно игнорировать
     if (patch >= 32) u32 skin;
     Flag flag; // если юнит можно игнорировать
-    
+
     if (isUnit){
         u32 player;
     } else {
@@ -63,7 +63,7 @@ struct Item {
 };
 
 struct Cliff {
-    char rawcode[4]; 
+    char rawcode[4];
     u32 variation; // Вариация
     u32 x; // .w3e координата
     u32 y; // .w3e координата
@@ -71,9 +71,9 @@ struct Cliff {
 
 struct Data {
     u32 itemCount;
-    
+
     Item item[itemCount];
-    
+
     if (isUnit){}
     else {
         u32 cliffVersion; // Версия формата декораций склонов и рельефов

@@ -1,4 +1,4 @@
-#pragma description Rect
+#pragma description Warcraft.w3r
 #pragma endian little
 
 import std.io;
@@ -24,5 +24,5 @@ struct Rect {
     char sound[]; // Фоновый звук
     Color color;
 };
- 
+
 Rect rect[count] @0x08;

@@ -1,4 +1,4 @@
-#pragma description Warcraft 3 Sound
+#pragma description Warcraft.w3s
 #pragma endian little
 
 import std.io;
