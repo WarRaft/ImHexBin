@@ -22,8 +22,8 @@ struct Data {
         Code code;
     }
 
-    u32 countTrigger;
-    Code triggers[countTrigger];
+    u32 triggerCount;
+    Code trigger[triggerCount];
 };
 
 Data data @ 0x04;
