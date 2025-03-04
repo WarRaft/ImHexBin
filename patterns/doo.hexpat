@@ -1,4 +1,5 @@
 #pragma description Warcraft.doo
+#pragma magic [ 57 33 64 6F ] @ 0x00
 #pragma endian little
 #pragma array_limit 99999
 
@@ -11,7 +12,7 @@ char magick[4] @ 0x00 [[comment("W3do")]];
 u32 format @0x04; // ROC=7, TFT=8
 u32 subformat @0x08; // ROC=9/7, TFT=11
 
-bool isUnit = false;
+bool isUnit in;
 u32 patch = 26; // Номер патча, указано в war3map.w3i
 
 struct Vector {
